@@ -31,7 +31,7 @@ let createTrail = function () {
     const squares = document.querySelectorAll(".box");
     squares.forEach((square) => {
         square.addEventListener("mouseover", () => {
-        square.style.background = "grey";
+        square.classList.add("boxTrail");
         });
     });
     return squares;
